@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/ui/articles.dart';
 import 'package:news_app/ui/login.dart';
 
 void main() async {
@@ -9,7 +10,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Login(),
+      //home: Login(),
+      home: AllNews(),
       debugShowCheckedModeBanner: false,
       title: "Buzzyfeed",
       theme: ThemeData(
@@ -17,8 +19,8 @@ class MyApp extends StatelessWidget {
         fontFamily: "Montserrat",
         // Dynamic font styles
         textTheme: TextTheme(
-          headline: TextStyle(fontWeight: FontWeight.w900, fontSize: 20.0),
-          body2: TextStyle(fontStyle: FontStyle.italic),
+          headline5: TextStyle(fontWeight: FontWeight.w900, fontSize: 20.0),
+          bodyText1: TextStyle(fontStyle: FontStyle.italic),
         ),
       ),
     );
